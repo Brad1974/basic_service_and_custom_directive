@@ -15,7 +15,7 @@ function MainController(DataService) {
       city: ctrl.newCity,
       state: ctrl.newState,
       zip: ctrl.newZip
-    }
+    };
     DataService.postPeople(ctrl.newName, ctrl.newAddress, ctrl.newCity, ctrl.newState, ctrl.newZip)
     .then(function(data){
       ctrl.people.push(newContact);
